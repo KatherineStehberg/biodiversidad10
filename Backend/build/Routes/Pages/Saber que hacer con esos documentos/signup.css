@@ -1,0 +1,139 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f5f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.signup-form {
+    flex: 1;
+    padding: 40px;
+}
+
+.image-container {
+    flex: 1;
+    background-color: #e0f7f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Título del formulario */
+.signup-form h2 {
+    font-size: 2rem;
+    color: #009688;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Subtexto */
+.signup-form .subtext {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Estilo de los campos de entrada */
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Información de la contraseña */
+.signup-form .password-info {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Estilo del botón de envío */
+.signup-form .signup-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #009688;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover en el botón */
+.signup-form .signup-button:hover {
+    background-color: #00796b;
+}
+
+/* Botón de registro con Instagram */
+.instagram-signup {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.instagram-signup .instagram-button {
+    background-color: #e1306c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.instagram-signup .instagram-button:hover {
+    background-color: #c2185b;
+}
+
+/* Estilo para el enlace al inicio de sesión */
+.signup-form p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.signup-form p a {
+    color: #009688;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-form p a:hover {
+    text-decoration: underline;
+}
