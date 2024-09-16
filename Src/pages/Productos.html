@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos - Biodiversidad.cl</title>
+    <link rel="stylesheet" href="../assets/style/Projects.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="/">Biodiversidad.cl</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./Services.html">Servicios</a></li>
+            <li><a href="./Quienessomos.html">Acerca de</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./Contact.html">Contacto</a></li>
+            <li><a href="./Signup.html">Registrarse</a></li>
+            <li><a href="./Login.html" class="register-link">Iniciar Sesión</a></li>
+            <li class="cart" id="cart">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-count" id="cart-count">0</span>
+                <div class="cart-popup" id="cart-popup">
+                    <h3>Carrito</h3>
+                    <div id="cart-items"></div>
+                    <p class="cart-total">Total: $0.00</p>
+                    <div class="cart-buttons">
+                        <button class="btn" id="checkout-btn">Pagar</button>
+                        <button class="btn" id="clear-cart-btn">Borrar</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="main-title">Nuestros Productos</h1>
+        </div>
+    </header>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h5 class="section-title">Productos</h5>
+            <p class="section-description">
+                Encuentra el producto que necesitas...
+            </p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="../assets/img/basureros.jpg" alt="Producto 1" class="project-image" />
+                    <h3>Producto 1</h3>
+                    <p>$10.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Producto 1', 10.00)">Añadir al Carrito</button>
+                </div>
+                <div class="project-card">
+                    <img src="../assets/img/bebederodeaves.jpg" alt="Producto 2" class="project-image" />
+                    <h3>Producto 2</h3>
+                    <p>$20.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Producto 2', 20.00)">Añadir al Carrito</button>
+                </div>
+                <div class="project-card">
+                    <img src="../assets/img/colmena.jpg" alt="Producto 3" class="project-image" />
+                    <h3>Producto 3</h3>
+                    <p>$30.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Producto 3', 30.00)">Añadir al Carrito</button>
+                </div>
+                <div class="project-card">
+                    <img src="../assets/img/fertilizanteorganico.jpg" alt="Producto 4" class="project-image" />
+                    <h3>Producto 4</h3>
+                    <p>$40.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Producto 4', 40.00)">Añadir al Carrito</button>
+                </div>
+                <div class="project-card">
+                    <img src="../assets/img/fertilizanteorganico.jpg" alt="Producto 5" class="project-image" />
+                    <h3>Producto 5</h3>
+                    <p>$50.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Producto 5', 50.00)">Añadir al Carrito</button>
+                </div>
+                <div class="project-card">
+                    <img src="../assets/img/colmena.jpg" alt="Producto 6" class="project-image" />
+                    <h3>Producto 6</h3>
+                    <p>$60.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Producto 6', 60.00)">Añadir al Carrito</button>
+                </div>
+                <div class="project-card">
+                  <img src="../assets/img/bebederodeaves.jpg" alt="Producto 5" class="project-image" />
+                  <h3>Producto 5</h3>
+                  <p>$50.00</p>
+                  <button class="add-to-cart-btn" onclick="addToCart('Producto 5', 50.00)">Añadir al Carrito</button>
+              </div>
+              <div class="project-card">
+                  <img src="../assets/img/basureros.jpg" alt="Producto 6" class="project-image" />
+                  <h3>Producto 6</h3>
+                  <p>$60.00</p>
+                  <button class="add-to-cart-btn" onclick="addToCart('Producto 6', 60.00)">Añadir al Carrito</button>
+              </div>
+              <div class="project-card">
+                <img src="../assets/img/KitDeJardineria.jpg" alt="Producto 5" class="project-image" />
+                <h3>Producto 5</h3>
+                <p>$50.00</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Producto 5', 50.00)">Añadir al Carrito</button>
+            </div>
+            <div class="project-card">
+                <img src="../assets/img/Semillas.jpg" alt="Producto 6" class="project-image" />
+                <h3>Producto 6</h3>
+                <p>$60.00</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Producto 6', 60.00)">Añadir al Carrito</button>
+            </div>
+                <div class="project-card">
+                    <img src="../assets/img/KitDeJardineria.jpg" alt="Producto 7" class="project-image" />
+                    <h3>Producto 7</h3>
+                    <p>$70.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Producto 7', 70.00)">Añadir al Carrito</button>
+                </div>
+                <div class="project-card">
+                    <img src="../assets/img/Semillas.jpg" alt="Producto 8" class="project-image" />
+                    <h3>Producto 8</h3>
+                    <p>$80.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Producto 8', 80.00)">Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+          <p>Dirección: Avenida Egaña 1638, B. Peñalolén, Santiago, Chile</p>
+          <div class="contact-social-container">
+              <p class="contact-info">Contacto: <a href="mailto:info@biodiversidad.cl">info@biodiversidad.cl</a></p>
+              <div class="social-icons">
+                  <a href="https://www.instagram.com" target="_blank" class="social-icon instagram">
+                      <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="https://www.facebook.com" target="_blank" class="social-icon facebook">
+                      <i class="bi bi-facebook"></i>
+                  </a>
+              </div>
+          </div>  
+          <p>&copy; 2024 Biodiversidad.cl. Todos los derechos reservados.</p>
+      </div>
+  </footer>
+
+    <script>
+        const cartPopup = document.getElementById('cart-popup');
+        const cartIcon = document.getElementById('cart');
+        const cartCount = document.getElementById('cart-count');
+        const cartItems = document.getElementById('cart-items');
+        const cartTotal = document.querySelector('.cart-total');
+
+        cartIcon.addEventListener('click', () => {
+            cartPopup.classList.toggle('show');
+        });
+
+        let cart = [];
+
+        function addToCart(name, price) {
+            const itemIndex = cart.findIndex(item => item.name === name);
+            if (itemIndex > -1) {
+                cart[itemIndex].quantity += 1;
+            } else {
+                cart.push({ name, price, quantity: 1 });
+            }
+            updateCart();
+        }
+
+        function updateCart() {
+            cartItems.innerHTML = '';
+            let total = 0;
+            cart.forEach(item => {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+                cartItems.innerHTML += `
+                    <div class="cart-item">
+                        <p>${item.name} x ${item.quantity}</p>
+                        <p>$${itemTotal.toFixed(2)}</p>
+                    </div>
+                `;
+            });
+            cartCount.textContent = cart.length;
+            cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+        }
+
+        document.getElementById('clear-cart-btn').addEventListener('click', () => {
+            cart = [];
+            updateCart();
+        });
+
+        document.getElementById('checkout-btn').addEventListener('click', () => {
+            alert('Proceso de pago');
+        });
+    </script>
+</body>
+</html>

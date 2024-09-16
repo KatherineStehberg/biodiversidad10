@@ -1,0 +1,75 @@
+/* General container styling */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4caf50;
+    text-decoration: none;
+  }
+  
+  .login-form {
+    background-color: #f6f6f6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .subtext {
+    color: #666;
+  }
+  
+  .gray-text {
+    color: #666;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .purple-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .purple-button:hover {
+    background-color: #45a049;
+  }
+  
+  .forgot-password {
+    float: right;
+    font-size: 12px;
+    text-decoration: none;
+  }
+  
+  .remember-me {
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .socialmedia-icons a {
+    color: #666;
+    margin: 0 10px;
+  }
+  
+  .error {
+    color: red;
+    margin-bottom: 10px;
+  }
+  

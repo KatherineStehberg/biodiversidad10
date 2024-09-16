@@ -1,0 +1,44 @@
+ [
+
+{
+    "id": 7,
+    "name": "Macetas",
+    "image": "/vite-project/src/imagen/macetas.jpg",
+    "price": 8.99,
+    "rating": {
+        "stars": 4,
+        "reviews": 12
+    }
+},
+{
+    "id": 8,
+    "name": "Cultivador",
+    "image": "/vite-project/src/imagen/cultivador.jpg",
+    "price": 9.49,
+    "rating": {
+        "stars": 3,
+        "reviews": 7
+    }
+},
+{
+    "id": 9,
+    "name": "Manguera",
+    "image": "/vite-project/src/imagen/manguera.jpg",
+    "price": 10.90,
+    "rating": {
+        "stars": 4,
+        "reviews": 9
+    }
+},
+{
+    "id": 10,
+    "name": "Pala",
+    "image": "/vite-project/src/imagen/pala.jpg",
+    "price": 11.99,
+    "rating": {
+        "stars": 4,
+        "reviews": 11
+        }
+    }
+    ]
+

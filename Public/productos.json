@@ -1,0 +1,63 @@
+[
+        {
+            "id": 1,
+            "name": "Kit de jardinería",
+            "image": "/vite-project/src/imagen/KitDeJardineria.jpg",
+            "price": 9.99,
+            "badge": "Hot"
+        },
+        {
+            "id": 2,
+            "name": "Kit Basureros",
+            "image": "/vite-project/src/imagen/basureros.jpg",
+            "price": 4.49,
+            "oldPrice": 5.90,
+            "badge": "New",
+            "rating": {
+                "stars": 4,
+                "reviews": 6
+            }
+        },
+        {
+            "id": 3,
+            "name": "Colmena",
+            "image": "/vite-project/src/imagen/colmena.jpg",
+            "price": 3.99,
+            "oldPrice": 4.90,
+            "badge": "90% Off",
+            "rating": {
+                "stars": 3,
+                "reviews": 10
+            }
+        },
+        {
+            "id": 4,
+            "name": "Fertilizante",
+            "image": "/vite-project/src/imagen/fertilizanteorganico.jpg",
+            "price": 5.90,
+            "rating": {
+                "stars": 4,
+                "reviews": 13
+            }
+        },
+        {
+            "id": 5,
+            "name": "Bebedor de Aves",
+            "image": "/vite-project/src/imagen/bebederodeaves.jpg",
+            "price": 6.99,
+            "rating": {
+                "stars": 3,
+                "reviews": 8
+            }
+        },
+        {
+            "id": 6,
+            "name": "Semillas",
+            "image": "/vite-project/src/imagen/Semillas.jpg",
+            "price": 7.49,
+            "rating": {
+                "stars": 4,
+                "reviews": 15
+            }
+        }
+    ]

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - Biodiversidad.cl</title>
+    <link rel="stylesheet" href="../assets/style/Blog.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/">Biodiversidad.cl</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/Frontend/Src/pages/Productos.html">Productos</a></li>
+          <li><a href="/Frontend/Src/pages/Services.html">Servicios</a></li>
+          <li><a href="/Frontend/Src/pages/Quienessomos.html">Acerca de</a></li>
+          <li><a href="/Frontend/Src/pages/Contact.html">Contacto</a></li>
+          <li><a href="/Frontend/Src/pages/Signup.html">Registrarse</a></li>
+          <li><a href="/Frontend/Src/pages/Login.html" class="register-link">Iniciar Sesión</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container main-content">
+      <div class="blog-posts" id="blog-posts">
+        <article class="blog-post">
+          <h2>Título del Blog Post 1</h2>
+          <p>Descripción breve del blog post 1.</p>
+        </article>
+        <article class="blog-post">
+          <h2>Título del Blog Post 2</h2>
+          <p>Descripción breve del blog post 2.</p>
+        </article>
+        <article class="blog-post">
+          <h2>Título del Blog Post 3</h2>
+          <p>Descripción breve del blog post 3.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="submission-form">
+        <h2>Envía tu Publicación</h2>
+        <form id="post-form">
+          <div class="form-group">
+            <label for="post-title">Título</label>
+            <input type="text" id="post-title" name="post-title" required />
+          </div>
+          <div class="form-group">
+            <label for="post-content">Contenido</label>
+            <textarea id="post-content" name="post-content" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Enviar Publicación</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p>Dirección: Avenida Egaña 1638, B. Peñalolén, Santiago, Chile</p>
+        <div class="contact-social-container">
+          <p class="contact-info">
+            Contacto:
+            <a href="mailto:info@biodiversidad.cl">info@biodiversidad.cl</a>
+          </p>
+          <div class="social-icons">
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              class="social-icon instagram"
+            >
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              class="social-icon facebook"
+            >
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+        </div>
+        <p>&copy; 2024 Biodiversidad.cl. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .getElementById("post-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const title = document.getElementById("post-title").value;
+          const content = document.getElementById("post-content").value;
+
+          const newPost = document.createElement("article");
+          newPost.className = "blog-post";
+          newPost.innerHTML = `
+        <h2>${title}</h2>
+        <p>${content} <a href="#">Leer más...</a></p>
+      `;
+
+          document.getElementById("blog-posts").appendChild(newPost);
+
+          document.getElementById("post-form").reset();
+        });
+    </script>
+  </body>
+</html>

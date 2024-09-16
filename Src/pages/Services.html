@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Biodiversidad.cl</title>
+    <link rel="stylesheet" href="/Frontend/Src/assets/style/Services.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="/">Biodiversidad.cl</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./Productos.html">Productos</a></li>
+            <li><a href="./Quienessomos.html">Acerca de</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./Contact.html">Contacto</a></li>
+            <li><a href="./Signup.html">Registrarse</a></li>
+            <li><a href="./Login.html" class="register-link">Iniciar Sesión</a></li>
+            <li class="cart" id="cart">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-count" id="cart-count">0</span>
+                <div class="cart-popup" id="cart-popup">
+                    <h3>Carrito</h3>
+                    <div id="cart-items"></div>
+                    <p class="cart-total">Total: $0.00</p>
+                    <div class="cart-buttons">
+                        <button class="btn" id="checkout-btn">Pagar</button>
+                        <button class="btn" id="clear-cart-btn">Borrar</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="main-title">Nuestros Servicios</h1>
+        </div>
+    </header>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h5 class="section-title">Servicios</h5>
+            <p class="section-description">
+                Encuentra el servicio que necesitas...
+            </p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://biodiversidad.cl/wp-content/uploads/2024/09/Post-2-Profesional-Accounting-Service-Business-Instagram-Post.png" alt="Producto 1" class="project-image" />
+                    <h3>Consultoría Ambiental- Valor por Hora Especialista</h3>
+                    <p>$2.5 UF</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Producto 1', 10.00)">Añadir al Carrito</button>
+                </div>
+                <div class="project-card">
+                    <img src="https://biodiversidad.cl/wp-content/uploads/2024/09/Post_8_Ingresar_SEIA_Instagram.png" alt="Asesoría ingresar SEIA" class="project-image" />
+                    <h3>Asesoría Ingresar SEIA- Valor por Hora Especialista</h3>
+                    <p>$2.5 UF </p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Producto 2', 20.00)">Añadir al Carrito</button>
+                </div>
+                <div class="project-card">
+                    <img src="https://biodiversidad.cl/wp-content/uploads/2024/09/post_6_aprende_leyes_instagram.png" alt="Producto 3" class="project-image" />
+                    <h3>Capacitación Ambiental- Temas Varios</h3>
+                    <p>$250.000</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Producto 3', 30.00)">Añadir al Carrito</button>
+                </div>
+                <div class="project-card">
+                    <img src="https://biodiversidad.cl/wp-content/uploads/2024/06/Evitelamulta.png" alt="Asesorías Legales Pre-Auditorias" class="project-image" />
+                    <h3>Asesorías Legales Pre-Auditorías- Valor por hora servicio</h3>
+                    <p>2.5 UF</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Producto 4', 40.00)">Añadir al Carrito</button>
+                </div>
+                <div class="project-card">
+                    <img src="https://biodiversidad.cl/wp-content/uploads/2024/09/post_5_asesoria_juridica_ambiental_instagram.png" alt="Producto 5" class="project-image" />
+                    <h3>Asesoría Jurídica Ambiental-Valor por hora</h3>
+                    <p>2.5 UF</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Producto 5', 50.00)">Añadir al Carrito</button>
+                </div>
+                <div class="project-card">
+                    <img src="https://biodiversidad.cl/wp-content/uploads/2024/09/Garantiza-la-Seguridad-en-tu-Proyecto-Minero-4-1.png" alt="Producto 6" class="project-image" />
+                    <h3>Asesoría en Proyectos Minería- Asesoría por hora</h3>
+                    <p>2.5 UF</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Producto 6', 60.00)">Añadir al Carrito</button>
+                </div>
+                <div class="project-card">
+                  <img src="https://biodiversidad.cl/wp-content/uploads/2024/09/Post-24-Eres-encargado-de-sustentabilidad-de-tu-empresa-2-1.png" alt="Producto 5" class="project-image" />
+                  <h3>Asesorías para Encargados de Sustentabilidad- Valor por hora</h3>
+                  <p>2.5 UF</p>
+                  <button class="add-to-cart-btn" onclick="addToCart('Producto 5', 50.00)">Añadir al Carrito</button>
+              </div>
+              <div class="project-card">
+                  <img src="https://biodiversidad.cl/wp-content/uploads/2024/09/Post-25_SI-estas-enfrentando-disputas-legales-4.png" alt="Producto 6" class="project-image" />
+                  <h3>Disputas Legales- Valor por hora</h3>
+                  <p>2.5 UF</p>
+                  <button class="add-to-cart-btn" onclick="addToCart('Producto 6', 60.00)">Añadir al Carrito</button>
+              </div>
+              <div class="project-card">
+                <img src="https://biodiversidad.cl/wp-content/uploads/2024/09/Post-30_Clave-al-exito-1-1.png" alt="Proyectos Agrícolas" class="project-image" />
+                <h3>Asesorías Ambientales Servicios Productivos. Valor por hora</h3>
+                <p>2.5 UF</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Producto 5', 50.00)">Añadir al Carrito</button>
+            </div>
+            <div class="project-card">
+                <img src="https://biodiversidad.cl/wp-content/uploads/2024/09/Post-31_Facilita-la-Aprobacion-ambiental-de-tu-proyecto.png" alt="Producto 6" class="project-image" />
+                <h3>Asesoría Aprobación Ambiental</h3>
+                <p>2.5 UF</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Producto 6', 60.00)">Añadir al Carrito</button>
+            </div>
+                <div class="project-card">
+                    <img src="https://biodiversidad.cl/wp-content/uploads/2024/09/Post-29_No-Pierdas-de-Vista-la-aprobacion-Ambiental-para-tu-proyecto.png" alt="Producto 7" class="project-image" />
+                    <h3>Asesoría Ambiental. Valor por hora</h3>
+                    <p>2.5 UF</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Producto 7', 70.00)">Añadir al Carrito</button>
+                </div>
+                <div class="project-card">
+                    <img src="https://biodiversidad.cl/wp-content/uploads/2024/09/Post-26_Descubre-la-Viabilidad-Ambiental-de-tu-Proyecto-con-Benoit-Asociados-2.png" alt="Producto 8" class="project-image" />
+                    <h3>Asesoría Ambiental. Valor por hora.</h3>
+                    <p>2.5 UF</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Producto 8', 80.00)">Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+          <p>Dirección: Avenida Egaña 1638, B. Peñalolén, Santiago, Chile</p>
+          <div class="contact-social-container">
+              <p class="contact-info">Contacto: <a href="mailto:info@biodiversidad.cl">info@biodiversidad.cl</a></p>
+              <div class="social-icons">
+                  <a href="https://www.instagram.com" target="_blank" class="social-icon instagram">
+                      <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="https://www.facebook.com" target="_blank" class="social-icon facebook">
+                      <i class="bi bi-facebook"></i>
+                  </a>
+              </div>
+          </div>  
+          <p>&copy; 2024 Biodiversidad.cl. Todos los derechos reservados.</p>
+      </div>
+  </footer>
+
+    <script>
+        const cartPopup = document.getElementById('cart-popup');
+        const cartIcon = document.getElementById('cart');
+        const cartCount = document.getElementById('cart-count');
+        const cartItems = document.getElementById('cart-items');
+        const cartTotal = document.querySelector('.cart-total');
+
+        cartIcon.addEventListener('click', () => {
+            cartPopup.classList.toggle('show');
+        });
+
+        let cart = [];
+
+        function addToCart(name, price) {
+            const itemIndex = cart.findIndex(item => item.name === name);
+            if (itemIndex > -1) {
+                cart[itemIndex].quantity += 1;
+            } else {
+                cart.push({ name, price, quantity: 1 });
+            }
+            updateCart();
+        }
+        document.getElementById('clear-cart-btn').addEventListener('click', () => {
+            cart = [];
+            updateCart();
+        });
+
+        document.getElementById('checkout-btn').addEventListener('click', () => {
+            alert('Proceso de pago');
+        });
+    </script>
+</body>
+</html>
